@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3 hamburger icon nav</title>
+    <!-- external style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <div id="nav-container">
+        <nav>
+            <a href="#home" id="active">Home</a>
+            <a href="buy.html">Buy</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="recipes/index.html">Recipes</a>
+            <a href="tips.html">Tips</a>
+        </nav>
+    </div>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+
+  <div style="padding-left:16px">
+    <h3>Vertical Mobile Navbar</h3>
+    <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+    <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+  </div>
+<!-- End smartphone / tablet look -->
+</div>
+
+  <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+    }
+    </script>
+
+</body>
+</html>
